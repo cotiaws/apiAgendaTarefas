@@ -1,0 +1,16 @@
+services:
+
+   postgres:
+      image: postgres:16
+      container_name: agendatarefasapi_postgres
+      environment:
+         POSTGRES_DB: bd_agenda
+         POSTGRES_USER: agenda_coti
+         POSTGRES_PASSWORD: senha_coti
+      ports:
+         - "5435:5432"
+      volumes:
+         - postgres_data_agenda:/var/lib/postgresql/data
+
+volumes:
+    postgres_data_agenda:
