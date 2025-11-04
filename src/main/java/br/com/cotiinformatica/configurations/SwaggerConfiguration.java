@@ -19,7 +19,7 @@ public class SwaggerConfiguration {
         return new OpenAPI()
                 .info(new Info()
                         .title("API - Sistema de Agenda de tarefas")
-                        .description("Documentação da API do sistema desenvolvido em Spring Boot")
+                        .description("Documentação da API do sistema de agenda de tarefas desenvolvido em Spring Boot")
                         .version("1.0.0")
                         .contact(new Contact()
                                 .name("COTI Informática")
